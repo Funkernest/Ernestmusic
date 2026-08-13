@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ernest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Fraunces:ital,opsz,wght@1,9..144,500&family=Work+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{
+    font-family:'Work Sans', sans-serif;
+    background:#0F9FBE;
+    color:#F2FBFC;
+  }
+  .wrap{ max-width:600px; margin:0 auto; padding:0 28px; }
+
+  .name-block{
+    min-height:42vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top:60px;
+  }
+  .name{
+    font-family:'Mea Culpa', cursive;
+    color:#FFFFFF;
+    font-size:clamp(5rem, 18vw, 8.5rem);
+    text-align:center;
+    line-height:1;
+  }
+
+  .tagline-block{ text-align:center; padding:18px 0 130px; }
+  .tagline{ font-family:'Fraunces', serif; font-style:italic; font-size:1.05rem; color:#BFEFE6; }
+
+  .intro-block{ text-align:center; padding:0 0 180px; }
+  .intro{
+    max-width:480px;
+    margin:0 auto;
+    font-size:1.05rem;
+    line-height:1.8;
+    color:#F2FBFC;
+  }
+
+  .facts{
+    max-width:440px;
+    margin:0 auto;
+    padding:0 0 200px;
+  }
+  .facts p{ font-size:0.98rem; line-height:1.75; margin-bottom:32px; }
+  .facts p:last-child{ margin-bottom:0; }
+  .label{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:500;
+    font-size:0.78rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:#BFEFE6;
+    margin-right:6px;
+  }
+
+  section.block{ padding:190px 0; }
+  p{ font-size:0.98rem; line-height:1.9; color:#F2FBFC; margin-bottom:64px; }
+  p:last-child{ margin-bottom:0; }
+
+  .media-item{ margin-bottom:80px; }
+  .media-item:last-child{ margin-bottom:0; }
+  .media-item video{
+    width:100%;
+    aspect-ratio:16/9;
+    border-radius:10px;
+    background:rgba(0,0,0,0.15);
+    object-fit:cover;
+    display:block;
+  }
+  .media-title{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.8rem;
+    letter-spacing:0.04em;
+    color:#BFEFE6;
+    margin-top:14px;
+    text-align:center;
+  }
+
+  .video-pair{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:60px;
+  }
+  .video-pair .media-item{ margin-bottom:0; }
+
+  .pull{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-weight:500;
+    font-size:clamp(1.3rem, 3.8vw, 1.7rem);
+    line-height:1.5;
+    color:#FFFFFF;
+    text-align:center;
+    max-width:520px;
+    margin:0 auto;
+    padding:210px 28px 0;
+  }
+
+  .bio-spacer{ height:420px; }
+
+  .signoff{
+    text-align:center;
+    padding:200px 0 150px;
+  }
+  .signoff a{
+    color:#FFFFFF;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.95rem;
+    letter-spacing:0.02em;
+    text-decoration:none;
+    border-bottom:1px solid rgba(255,255,255,0.4);
+    padding-bottom:3px;
+  }
+</style>
+</head>
+<body>
+
+<div class="name-block"><p class="name">Ernest</p></div>
+<div class="tagline-block"><p class="tagline">Funk will save the world</p></div>
+
+<div class="intro-block">
+  <p class="intro">Actuaciones de versiones funk, soul, blues, pop... de artistas como Prince, Santana, Michael Jackson, George Benson, Sade...</p>
+</div>
+
+<div class="facts">
+  <p><span class="label">Formato</span>Yo toco la batería y canto mientras la canción suena (backing track).</p>
+  <p><span class="label">Indicado para</span>todo tipo de locales y eventos donde se quiera mover el esqueleto con temazos funk, soul, pop, blues...</p>
+</div>
+
+<div class="wrap">
+  <section class="block">
+
+    <div class="media-item">
+      <video controls preload="metadata" src="videos/cool.mp4"></video>
+      <p class="media-title">Cool — The Time</p>
+    </div>
+
+    <div class="video-pair">
+      <div class="media-item">
+        <video controls preload="metadata" src="videos/video-1.mp4"></video>
+        <p class="media-title">Título del video 1</p>
+      </div>
+      <div class="media-item">
+        <video controls preload="metadata" src="videos/video-2.mp4"></video>
+        <p class="media-title">Título del video 2</p>
+      </div>
+    </div>
+
+  </section>
+
+  <p class="pull">"Todos reconocemos lo que toca el corazón, así que ¡dale al corazón lo que le gusta!"</p>
+
+  <div class="bio-spacer"></div>
+
+  <section class="block">
+    <p>Desde pequeño sentí que la música era magia, literalmente. Lo descubrí al ver tocar a mi tío, batería de Los Canarios, un teclado y replicar lo que él hacía la primera vez toqué una tecla. Y así empecé a recibir clases particulares de solfeo por parte de Marita, de la familia del compositor Joaquín Rodrigo, en Valencia.</p>
+    <p>Después ingresé en el conservatorio con el saxofón como instrumento, pero un accidente grave en bicicleta hizo que dejara de recibir clases de música.</p>
+    <p>Años más tarde retomé la música recibiendo clases de batería en Benidorm, que era el instrumento que desde pequeño quería aprender a tocar. Y posteriormente recibí clases de batería por parte de Pepe Sánchez, batería de Barbra Streisand, Barry White, Julio Iglesias y muchos otros artistas...</p>
+    <p>Desde entonces he tocado para diferentes artistas y varias agrupaciones así como en programas de televisión.</p>
+    <p>En esta etapa como solista he querido compartir la pasión que tengo por la música funk, soul, blues, pop... tocando y cantando en directo versiones que son absolutamente necesarias para la salud del que las escucha. Tanto por la música como por la letra.</p>
+    <p>Este planeta está necesitado de salud y quiero humildemente compartir y aportar salud, algarabía, regocijo y esperanza.</p>
+  </section>
+
+  <div class="signoff">
+    <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
+  </div>
+</div>
+
+</body>
+</html>
